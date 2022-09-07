@@ -24,9 +24,12 @@ Run:
 - `cd ./front`
 - `npm i`
 3) create .env file for BE (required var DATABASE_URL).
-4) go root and run script:
-- `cd ./`
-- `npm run-script fly`
+4) start Docker with PostgreSQL:
+- `docker-compose up -d `
+5) Migrate:
+- `npx prisma migrate dev --name init`
+6) go root and run script:
+- `npm run-script dev`
 
 <hr>
 
