@@ -1,0 +1,34 @@
+/// DOCKER COMPOSE
+# сигнатура
+docker-compose [-f <arg>...] [--profile <name>...] [options] [COMMAND] [ARGS...]
+# основные флаги
+-f - путь к docker-compose.yml
+-p - название проекта
+--project-path - альтернативная рабочая директория (по умолчанию рабочей является директория, содержащая docker-compose.yml)
+# основные команды
+up - создание и запуск сервисов
+down - остановка и удаление контейнеров, сетей, образов и томов
+start - запуск сервисов
+stop - остановка сервисов
+restart - перезапуск сервисов
+create - создание сервисов
+rm - удаление остановленных контейнеров
+run - выполнение одноразовой команды
+exec - выполнение команды в запущенном контейнере
+(docker exec -it hvatilo_fpm bash - открыть баш)
+
+docker-compose down -v - вырубить докер со всеми контейнерами
+/// DOCKER COMPOSE
+
+
+///Prisma
+npx prisma migrate dev --name init - миграция данных
+///Server
+npx ts-node .\server\index.ts
+
+
+
+VUE
+<form v-on:submit.prevent="onSubmit"></form>
+<a v-on:click.stop.prevent="doThat"></a>
+@click.stop="hidePopup" - stop propaganda
